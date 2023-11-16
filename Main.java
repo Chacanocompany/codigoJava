@@ -14,34 +14,35 @@ public class Main {
 
 
         System.out.println("Ingrese una distancia en millas: ");
-        double millas = teclado.nextDouble();
-        double kilometros = millas * 1.60934;
+        Double millas = teclado.nextDouble();
+        Double kilometros = millas * 1.60934;
         System.out.println("La distancia en Kilometros es: " + kilometros);
 
 
         System.out.println("Ingrese precio original del producto: ");
-        float precioOriginal = teclado.nextFloat();
+        Float precioOriginal = teclado.nextFloat();
         System.out.println("Ingrese porcentaje del descuento: ");
-        float descuento = teclado.nextFloat();
-        float precioFinal = precioOriginal - (precioOriginal * descuento / 100);
+        Float descuento = teclado.nextFloat();
+        Float precioFinal = precioOriginal - (precioOriginal * descuento / 100);
         System.out.println("El precio final del producto es de: " + precioFinal);
 
 
         System.out.println("Ingrese monto total de la cuenta: ");
-        float totalCuenta = teclado.nextFloat();
+        Float totalCuenta = teclado.nextFloat();
         System.out.println("Ingrese porcentaje de propina: ");
-        float porcentajePropina = teclado.nextFloat();
-        float propina = totalCuenta * (porcentajePropina / 100);
+        Float porcentajePropina = teclado.nextFloat();
+        Float propina = totalCuenta * (porcentajePropina / 100);
         System.out.println("La propina será de: " + propina);
-        */
+
 
         Integer numeroAleatorio = (int) (Math.random() * 10);
         System.out.println("Adivine un numero: ");
-        int ingresoUsuario = teclado.nextInt();
+        Integer ingresoUsuario = teclado.nextInt();
         if(ingresoUsuario == numeroAleatorio){
             System.out.println("Acerto!");
         }else{
             System.out.println("Incorrecto, el numero era: " + numeroAleatorio);
         }
+        */
     }
 }
